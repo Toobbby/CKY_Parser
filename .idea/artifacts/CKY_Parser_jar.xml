@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CKY_Parser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CKY_Parser_jar</output-path>
+    <root id="archive" name="CKY_Parser.jar">
+      <element id="module-output" name="CKY_Parser" />
+    </root>
+  </artifact>
+</component>
