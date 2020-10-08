@@ -15,6 +15,7 @@ public class GrammarReader {
     SymbolGenerator symbolGenerator;
 
     public GrammarReader(String path) throws IOException {
+        rules = new ArrayList<>();
         symbolGenerator = new SymbolGenerator();
         getGrammar(path);
     }

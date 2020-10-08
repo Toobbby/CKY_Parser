@@ -96,7 +96,7 @@ public class CKY {
     }
 
     public String constructedRes(TreeNode node) {
-        if(node.getLeft() == null || node.getRight() == null) {
+        if(node.getLeft() == null && node.getRight() == null) {
             return " " + node.getWord();
         }
 
