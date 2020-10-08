@@ -11,6 +11,11 @@ public class TreeNode {
     public TreeNode() {
     }
 
+    public TreeNode(String word, float prob) {
+        this.word = word;
+        this.prob = prob;
+    }
+
     public TreeNode(String word, TreeNode left, TreeNode right, float prob) {
         this.word = word;
         this.left = left;

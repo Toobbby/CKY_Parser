@@ -23,6 +23,10 @@ public class GrammarReader {
         return rules;
     }
 
+    public SymbolGenerator getSymbolGenerator() {
+        return symbolGenerator;
+    }
+
     private void getGrammar(String path) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         String line = br.readLine();
@@ -81,7 +85,7 @@ public class GrammarReader {
         return updatedTos;
     }
 
-    private List<Rule> findAllByTo(String to) {
+    public List<Rule> findAllByTo(String to) {
         List<Rule> res = new ArrayList<>();
         for(Rule rule : rules) {
             if(rule.getTo().equals(to)) {
